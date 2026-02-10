@@ -10,7 +10,7 @@ START_LAT as station_lat,
 START_LNG as station_lng
 
 from
-{{ source('demo', 'BIKE') }}
+{{ ref('stg_bike') }}
 
 
 )
